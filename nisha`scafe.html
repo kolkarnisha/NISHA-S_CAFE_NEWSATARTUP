@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nisha's Cafe</title>
+    <link rel="stylesheet" href="interriordesign.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="brand">Nisha's Cafe</div>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Crafted coffee • Luxurious experience</p>
+          <h1>Fresh brews, elegant ambiance, and unforgettable flavor.</h1>
+          <p>
+            Discover signature coffee drinks, creamy extras, and a refined cafe experience
+            designed to feel modern, calm, and memorable.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#menu">Explore Menu</a>
+            <a class="btn secondary" href="#about">Our Story</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <h3>Today's Signature</h3>
+          <p class="special-name">Mocha Bliss</p>
+          <span class="price">₹150</span>
+          <ul>
+            <li>Rich espresso</li>
+            <li>Chocolate topping</li>
+            <li>Sweet balance</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="menu" class="menu-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Signature Drinks</p>
+          <h2>Choose your perfect cup</h2>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <h3>Mocha</h3>
+            <p>Bold espresso with silky chocolate warmth.</p>
+            <div class="price-row"><span>Base</span><strong>₹150</strong></div>
+            <div class="price-row"><span>Ice cream</span><strong>₹20</strong></div>
+            <div class="price-row"><span>Topping</span><strong>₹30</strong></div>
+            <div class="price-row"><span>Sugar</span><strong>₹10</strong></div>
+          </article>
+
+          <article class="menu-card reveal">
+            <h3>Capchunio</h3>
+            <p>Balanced flavor with a smooth, cozy finish.</p>
+            <div class="price-row"><span>Base</span><strong>₹120</strong></div>
+            <div class="price-row"><span>Ice cream</span><strong>₹15</strong></div>
+            <div class="price-row"><span>Topping</span><strong>₹25</strong></div>
+            <div class="price-row"><span>Sugar</span><strong>₹8</strong></div>
+          </article>
+
+          <article class="menu-card reveal">
+            <h3>Latte</h3>
+            <p>Soft, creamy, and wonderfully comforting.</p>
+            <div class="price-row"><span>Base</span><strong>₹100</strong></div>
+            <div class="price-row"><span>Ice cream</span><strong>₹10</strong></div>
+            <div class="price-row"><span>Topping</span><strong>₹20</strong></div>
+            <div class="price-row"><span>Sugar</span><strong>₹5</strong></div>
+          </article>
+
+          <article class="menu-card reveal">
+            <h3>Cold Coffee</h3>
+            <p>Refreshingly chilled and easy to enjoy.</p>
+            <div class="price-row"><span>Base</span><strong>₹80</strong></div>
+            <div class="price-row"><span>Ice cream</span><strong>₹5</strong></div>
+            <div class="price-row"><span>Topping</span><strong>₹10</strong></div>
+            <div class="price-row"><span>Sugar</span><strong>₹5</strong></div>
+          </article>
+
+          <article class="menu-card reveal">
+            <h3>Black Coffee</h3>
+            <p>Pure, simple, and full of rich character.</p>
+            <div class="price-row"><span>Base</span><strong>₹50</strong></div>
+            <div class="price-row"><span>Ice cream</span><strong>₹0</strong></div>
+            <div class="price-row"><span>Topping</span><strong>₹0</strong></div>
+            <div class="price-row"><span>Sugar</span><strong>₹0</strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-card reveal">
+          <p class="eyebrow">Why guests love us</p>
+          <h2>Elegant service with a personal touch</h2>
+          <p>
+            From first sip to last bite, every detail is crafted to feel warm,
+            welcoming, and effortlessly premium.
+          </p>
+          <ul>
+            <li>Freshly prepared drinks</li>
+            <li>Customizable toppings and sweetness</li>
+            <li>Friendly service and cozy ambience</li>
+          </ul>
+        </div>
+
+        <div class="order-card reveal">
+          <h3>Build Your Cup</h3>
+          <form id="order-form">
+            <label>
+              Drink
+              <select id="drink" name="drink">
+                <option value="mocha">Mocha</option>
+                <option value="capchunio">Capchunio</option>
+                <option value="latte">Latte</option>
+                <option value="coldcoffe">Cold Coffee</option>
+                <option value="blackcofee">Black Coffee</option>
+              </select>
+            </label>
+            <label>
+              Quantity
+              <input id="quantity" name="quantity" type="number" min="1" value="1" />
+            </label>
+            <button type="submit">Place Order</button>
+          </form>
+          <div id="status-message" class="status info">Choose a drink to preview the bill.</div>
+          <div id="live-summary" class="summary-card"></div>
+          <div id="result-box" class="result-card"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer reveal">
+      <h3>Visit Nisha's Cafe</h3>
+      <p>Open daily • Cozy seating • Quick service</p>
+      <a href="mailto:hello@nishascafe.com">hello@nishascafe.com</a>
+    </footer>
+
+    <script src="cafe-app.js"></script>
+  </body>
+</html>
